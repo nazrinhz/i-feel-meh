@@ -1,0 +1,53 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#mainbody {
+  display: flex;
+  flex-direction: column;
+  max-width: max-content;
+}
+
+#maintitle{
+  color:black;
+}
+
+#content{
+  color: #A9A9A9;
+  border-style: solid;
+  border-color: #D9D9D9;
+  padding: 50px;
+}
+
+.participants-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#participants-number{
+  display: flex;
+  align-content: center;
+}
+
+.arrow{
+  height: 100px;
+}
+
+.debug{
+  border-style: solid;
+  border-color: red;
+}
+
+p {
+  color:black;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
