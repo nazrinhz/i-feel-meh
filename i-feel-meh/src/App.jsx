@@ -6,6 +6,7 @@ import Instruction from './Instruction';
 import Participants from './Participants';
 import axios from 'axios';
 import Footer from './Footer'
+import Menu from './Menu'
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
     })
     .catch(function (error) {
         // handle error
-        console.log(error);
+        setContent(error);
     })
     .finally(function () {
         // always executed
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <>
+      <Menu/>
       <Title/>
       <PDR data={content}/>
       <Instruction/> 
